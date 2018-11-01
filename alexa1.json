@@ -1,0 +1,46 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "nutrition assistant",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "RecordAFood",
+                    "slots": [
+                        {
+                            "name": "foods",
+                            "type": "AMAZON.Food"
+                        },
+                        {
+                            "name": "quantities",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "I just ate {quantities} {foods}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
